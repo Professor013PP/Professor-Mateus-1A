@@ -1,0 +1,38 @@
+body {
+    background-color: white;
+    color: black;
+    font-family: Arial, sans-serif;
+    margin: 0;
+    padding: 0;
+}
+
+header {
+    background-color: orange;
+    padding: 20px;
+    text-align: center;
+}
+
+h1 {
+    margin: 0;
+}
+
+main {
+    padding: 20px;
+}
+
+section {
+    margin-bottom: 30px;
+}
+
+h2 {
+    border-bottom: 2px solid orange;
+}
+
+footer {
+    text-align: center;
+    padding: 10px;
+    background-color: lightgray;
+    position: relative;
+    bottom: 0;
+    width: 100%;
+}
