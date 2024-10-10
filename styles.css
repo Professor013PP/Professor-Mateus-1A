@@ -1,13 +1,13 @@
 body {
-    background-color: white;
-    color: black;
+    background-color: black;
+    color: purple;
     font-family: Arial, sans-serif;
     margin: 0;
     padding: 0;
 }
 
 header {
-    background-color: orange;
+    background-color: green;
     padding: 20px;
     text-align: center;
 }
@@ -20,18 +20,19 @@ main {
     padding: 20px;
 }
 
-section {
-    margin-bottom: 30px;
+.hidden {
+    display: none;
 }
 
-h2 {
-    border-bottom: 2px solid orange;
+ul {
+    list-style-type: none;
+    padding: 0;
 }
 
 footer {
     text-align: center;
     padding: 10px;
-    background-color: lightgray;
+    background-color: gray;
     position: relative;
     bottom: 0;
     width: 100%;

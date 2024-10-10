@@ -4,148 +4,74 @@
     <meta charset="UTF-8">
     <meta name="viewport" content="width=device-width, initial-scale=1.0">
     <link rel="stylesheet" href="styles.css">
-    <title>Receitas de Culinária</title>
+    <title>Playlists de Músicas</title>
 </head>
 <body>
     <header>
-        <h1>Receitas de Culinária</h1>
+        <h1>Playlists de Músicas</h1>
     </header>
     <main>
         <section>
-            <h2>Brigadeiro</h2>
-            <p>Ingredientes:</p>
-            <ul>
-                <li>1 lata de leite condensado</li>
-                <li>2 colheres de sopa de achocolatado em pó</li>
-                <li>1 colher de sopa de manteiga</li>
-                <li>Granulado para decorar</li>
-            </ul>
-            <p>Modo de Preparo:</p>
-            <ol>
-                <li>Em uma panela, misture o leite condensado, o achocolatado e a manteiga.</li>
-                <li>Cozinhe em fogo baixo, mexendo sempre, até desgrudar do fundo da panela.</li>
-                <li>Deixe esfriar, faça bolinhas e passe no granulado.</li>
-            </ol>
+            <h2>Escolha um Gênero</h2>
+            <select id="genre-select" onchange="showPlaylist()">
+                <option value="">Selecione um Gênero</option>
+                <option value="pop">Pop</option>
+                <option value="rock">Rock</option>
+                <option value="jazz">Jazz</option>
+                <option value="eletronica">Eletrônica</option>
+            </select>
         </section>
-
-        <section>
-            <h2>Arroz</h2>
-            <p>Ingredientes:</p>
-            <ul>
-                <li>2 xícaras de arroz</li>
-                <li>4 xícaras de água</li>
-                <li>1 cebola picada</li>
-                <li>2 colheres de sopa de óleo</li>
-                <li>Sal a gosto</li>
-            </ul>
-            <p>Modo de Preparo:</p>
-            <ol>
-                <li>Aqueça o óleo e refogue a cebola até dourar.</li>
-                <li>Adicione o arroz e refogue por alguns minutos.</li>
-                <li>Adicione a água e o sal, cozinhe em fogo baixo até a água secar.</li>
-            </ol>
-        </section>
-
-        <section>
-            <h2>Feijão</h2>
-            <p>Ingredientes:</p>
-            <ul>
-                <li>1 xícara de feijão</li>
-                <li>2 xícaras de água</li>
-                <li>1 cebola picada</li>
-                <li>2 dentes de alho picados</li>
-                <li>Sal a gosto</li>
-            </ul>
-            <p>Modo de Preparo:</p>
-            <ol>
-                <li>Deixe o feijão de molho por algumas horas.</li>
-                <li>Cozinhe o feijão com a água em uma panela de pressão por cerca de 30 minutos.</li>
-                <li>Em outra panela, refogue a cebola e o alho, adicione o feijão cozido e tempere a gosto.</li>
-            </ol>
-        </section>
-
-        <section>
-            <h2>Carne de Panela</h2>
-            <p>Ingredientes:</p>
-            <ul>
-                <li>1 kg de carne (acém ou peito)</li>
-                <li>1 cebola picada</li>
-                <li>2 tomates picados</li>
-                <li>2 dentes de alho picados</li>
-                <li>Sal e pimenta a gosto</li>
-                <li>Água</li>
-            </ul>
-            <p>Modo de Preparo:</p>
-            <ol>
-                <li>Em uma panela de pressão, aqueça um pouco de óleo e doure a carne.</li>
-                <li>Adicione a cebola, o alho e os tomates, refogue por alguns minutos.</li>
-                <li>Adicione água até cobrir a carne, tempere e cozinhe por cerca de 40 minutos após a pressão.</li>
-            </ol>
-        </section>
-
-        <section>
-            <h2>Pão de Queijo</h2>
-            <p>Ingredientes:</p>
-            <ul>
-                <li>250 g de polvilho doce</li>
-                <li>100 ml de leite</li>
-                <li>50 ml de óleo</li>
-                <li>1 ovo</li>
-                <li>100 g de queijo ralado</li>
-                <li>Sal a gosto</li>
-            </ul>
-            <p>Modo de Preparo:</p>
-            <ol>
-                <li>Preaqueça o forno a 180°C.</li>
-                <li>Em uma panela, aqueça o leite e o óleo.</li>
-                <li>Em uma tigela, misture o polvilho, o sal, o queijo e adicione a mistura quente.</li>
-                <li>Adicione o ovo e misture até formar uma massa.</li>
-                <li>Modele bolinhas e coloque em uma assadeira. Asse por 20-25 minutos.</li>
-            </ol>
-        </section>
-
-        <section>
-            <h2>Salada de Frutas</h2>
-            <p>Ingredientes:</p>
-            <ul>
-                <li>1 maçã picada</li>
-                <li>1 banana picada</li>
-                <li>1 laranja em gomos</li>
-                <li>1/2 xícara de uvas</li>
-                <li>Suco de 1 limão</li>
-                <li>1 colher de sopa de mel (opcional)</li>
-            </ul>
-            <p>Modo de Preparo:</p>
-            <ol>
-                <li>Em uma tigela, misture todas as frutas picadas.</li>
-                <li>Adicione o suco de limão e o mel, se desejar.</li>
-                <li>Mexa delicadamente e sirva gelada.</li>
-            </ol>
-        </section>
-
-        <section>
-            <h2>Lasanha</h2>
-            <p>Ingredientes:</p>
-            <ul>
-                <li>500 g de massa para lasanha</li>
-                <li>500 g de carne moída</li>
-                <li>1 cebola picada</li>
-                <li>2 dentes de alho picados</li>
-                <li>400 g de molho de tomate</li>
-                <li>300 g de queijo muçarela</li>
-                <li>Sal e pimenta a gosto</li>
-            </ul>
-            <p>Modo de Preparo:</p>
-            <ol>
-                <li>Refogue a cebola e o alho, adicione a carne e cozinhe até dourar.</li>
-                <li>Adicione o molho de tomate, tempere e cozinhe por mais 10 minutos.</li>
-                <li>Em um refratário, intercale camadas de massa, carne e queijo.</li>
-                <li>Finalize com queijo e leve ao forno a 180°C por 30 minutos.</li>
-            </ol>
+        
+        <section id="playlist" class="hidden">
+            <h2>Músicas</h2>
+            <ul id="song-list"></ul>
         </section>
     </main>
     <footer>
-        <p>&copy; 2024 Receitas de Culinária</p>
+        <p>&copy; 2024 Playlists de Músicas</p>
     </footer>
+
+    <script>
+        const playlists = {
+            pop: ["Música 1", "Música 2", "Música 3", "Música 4", "Música 5", "Música 6", "Música 7", "Música 8", "Música 9", "Música 10", 
+                  "Música 11", "Música 12", "Música 13", "Música 14", "Música 15", "Música 16", "Música 17", "Música 18", "Música 19", "Música 20", 
+                  "Música 21", "Música 22", "Música 23", "Música 24", "Música 25", "Música 26", "Música 27", "Música 28", "Música 29", "Música 30", 
+                  "Música 31", "Música 32", "Música 33", "Música 34", "Música 35", "Música 36", "Música 37", "Música 38", "Música 39", "Música 40", 
+                  "Música 41", "Música 42", "Música 43", "Música 44", "Música 45", "Música 46", "Música 47", "Música 48", "Música 49", "Música 50"],
+            rock: ["Música 1", "Música 2", "Música 3", "Música 4", "Música 5", "Música 6", "Música 7", "Música 8", "Música 9", "Música 10", 
+                   "Música 11", "Música 12", "Música 13", "Música 14", "Música 15", "Música 16", "Música 17", "Música 18", "Música 19", "Música 20", 
+                   "Música 21", "Música 22", "Música 23", "Música 24", "Música 25", "Música 26", "Música 27", "Música 28", "Música 29", "Música 30", 
+                   "Música 31", "Música 32", "Música 33", "Música 34", "Música 35", "Música 36", "Música 37", "Música 38", "Música 39", "Música 40", 
+                   "Música 41", "Música 42", "Música 43", "Música 44", "Música 45", "Música 46", "Música 47", "Música 48", "Música 49", "Música 50"],
+            jazz: ["Música 1", "Música 2", "Música 3", "Música 4", "Música 5", "Música 6", "Música 7", "Música 8", "Música 9", "Música 10", 
+                   "Música 11", "Música 12", "Música 13", "Música 14", "Música 15", "Música 16", "Música 17", "Música 18", "Música 19", "Música 20", 
+                   "Música 21", "Música 22", "Música 23", "Música 24", "Música 25", "Música 26", "Música 27", "Música 28", "Música 29", "Música 30", 
+                   "Música 31", "Música 32", "Música 33", "Música 34", "Música 35", "Música 36", "Música 37", "Música 38", "Música 39", "Música 40", 
+                   "Música 41", "Música 42", "Música 43", "Música 44", "Música 45", "Música 46", "Música 47", "Música 48", "Música 49", "Música 50"],
+            eletronica: ["Música 1", "Música 2", "Música 3", "Música 4", "Música 5", "Música 6", "Música 7", "Música 8", "Música 9", "Música 10", 
+                          "Música 11", "Música 12", "Música 13", "Música 14", "Música 15", "Música 16", "Música 17", "Música 18", "Música 19", "Música 20", 
+                          "Música 21", "Música 22", "Música 23", "Música 24", "Música 25", "Música 26", "Música 27", "Música 28", "Música 29", "Música 30", 
+                          "Música 31", "Música 32", "Música 33", "Música 34", "Música 35", "Música 36", "Música 37", "Música 38", "Música 39", "Música 40", 
+                          "Música 41", "Música 42", "Música 43", "Música 44", "Música 45", "Música 46", "Música 47", "Música 48", "Música 49", "Música 50"]
+        };
+
+        function showPlaylist() {
+            const genre = document.getElementById('genre-select').value;
+            const playlistSection = document.getElementById('playlist');
+            const songList = document.getElementById('song-list');
+            songList.innerHTML = '';
+
+            if (genre && playlists[genre]) {
+                playlists[genre].forEach(song => {
+                    const li = document.createElement('li');
+                    li.textContent = song;
+                    songList.appendChild(li);
+                });
+                playlistSection.classList.remove('hidden');
+            } else {
+                playlistSection.classList.add('hidden');
+            }
+        }
+    </script>
 </body>
 </html>
